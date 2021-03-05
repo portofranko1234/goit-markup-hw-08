@@ -1,0 +1,47 @@
+@media screen and (max-width: 1199px) {
+  .doings {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title,
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    padding-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .doings {
+    padding-bottom: 94px;
+  }
+
+  .doings-list {
+    display: flex;
+  }
+
+  .doings-images:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .img-wrapper {
+    position: relative;
+  }
+
+  .img-subtitles {
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0px;
+  }
+}

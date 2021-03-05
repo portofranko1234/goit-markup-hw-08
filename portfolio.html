@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="page-header dividing-line">
+      <div class="container">
+        <nav class="site-nav">
+          <a class="nav-logo link" href="index.html">
+            Web<span class="nav-logo-style">Studio</span></a
+          >
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-links link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a
+                class="nav-links current portfolio-underline link"
+                href="./portfolio.html"
+              >
+                Портфолио
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-links link" href="#"> Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="burger-button" data-menu-button>
+          <svg class="burger-icon">
+            <use href="./icons/sprite-svg.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <ul class="contacts-nav">
+          <li class="contacts-nav-item">
+            <a class="contacts-nav-info link" href="mailto:info@devstudio.com">
+              <svg class="contacts-nav-icon-mail">
+                <use href="./icons/sprite-svg.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-nav-item">
+            <a class="contacts-nav-info link" href="tel:+380961111111">
+              <svg class="contacts-nav-icon-tel">
+                <use href="./icons/sprite-svg.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-button" data-menu-close>
+          <svg class="close-icon">
+            <use href="./icons/sprite-svg.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav">
+          <li class="mobile-menu-nav-item">
+            <a href="./index.html" class="mobile-menu-nav-link link current"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="./portfolio.html" class="mobile-menu-nav-link link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="#" class="mobile-menu-nav-link link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts-nav">
+          <li class="mobile-contacts-nav-item">
+            <a href="#" class="mobile-contacts-nav-link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts-nav-item">
+            <a href="#" class="mobile-contacts-nav-link link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social-list">
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">Instagram</a>
+          </li>
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">Twitter</a>
+          </li>
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">Facebook</a>
+          </li>
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">filters</h1>
+      <section class="filter-menu">
+        <div class="container">
+          <ul class="filter-button-list">
+            <li><button type="button" class="filter-button">Все</button></li>
+            <li>
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li><button type="button" class="filter-button">Дизайн</button></li>
+            <li>
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <h2 class="visually-hidden">projects</h2>
+
+        <div class="container">
+          <ul class="projects-list">
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/techno-crack.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/techno-crack@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/techno-crack.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/techno-crack@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/techno-crack.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/techno-crack@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/techno-crack.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/techno-crack@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/techno-crack.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/techno-crack@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/techno-crack.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/techno-crack@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/techno-crack.jpg"
+                      alt="list of three persons on the laptop"
+                  /></picture>
+                  <p class="overlay">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Технокряк</h3>
+                  <p class="description-paragraph">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/poster.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/poster@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop.poster.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/poster@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/poster.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/poster@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/poster.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/poster@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/poster.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/poster@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/poster.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/poster@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/poster.jpg"
+                      alt="New Orlean vs Golden Star Poster"
+                  /></picture>
+                  <p class="overlay">
+                    Не волнуйтесь, если что-то не работает. Если бы всё
+                    работало, вас бы уволили.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="description-paragraph">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/seafood.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/seafood@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/seafood.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/seafood@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/seafood.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/seafood@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/seafood.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/seafood@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/seafood.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/seafood@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/seafood.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/seafood@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/seafood.jpg"
+                      alt="the seafood restaurant logo"
+                  /></picture>
+
+                  <p class="overlay">
+                    Я думаю, что Microsoft назвал технологию .Net для того,
+                    чтобы она не показывалась в списках директорий Unix.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Ресторан Seafood</h3>
+                  <p class="description-paragraph">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/headphones.webp.webp  1x,
+                        portfolio.html.img/portfolio-desktop/headphones@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/headphones.jpg  1x,
+                        portfolio.html.img/portfolio-desktop/headphones@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/headphones.webp.webp  1x,
+                        portfolio.html.img/portfolio-tablet/headphones@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/headphones.jpg  1x,
+                        portfolio.html.img/portfolio-tablet/headphones@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/headphones.webp.webp  1x,
+                        portfolio.html.img/portfolio-mobile/headphones@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/headphones.jpg  1x,
+                        portfolio.html.img/portfolio-mobile/headphones@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/headphones.jpg"
+                      alt="headphones "
+                  /></picture>
+                  <p class="overlay">
+                    Объектно-ориентированная версия «спагетти кода» — это,
+                    конечно, «лазанья код» (очень много слоев).
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Проект Prime</h3>
+                  <p class="description-paragraph">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/boxes.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/boxes@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/boxes.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/boxes@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/boxes.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/boxes@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/boxes.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/boxes@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/boxes.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/boxes@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/boxes.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/boxes@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/boxes.jpg"
+                      alt="brown and white boxes"
+                  /></picture>
+                  <p class="overlay">
+                    Болтовня ничего не стоит. Покажите мне код.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Проект Boxes</h3>
+                  <p class="description-paragraph">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/monitor.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/monitor@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/monitor.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/monitor@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/monitor.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/monitor@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/monitor.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/monitor@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/monitor.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/monitor@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/monitor.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/monitor@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/monitor.jpg"
+                      alt="monitor with information on it "
+                  /></picture>
+                  <p class="overlay">
+                    В теории, теория и практика неразделимы. На практике это не
+                    так.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Inspiration has no Borders</h3>
+                  <p class="description-paragraph">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/limited-edition.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/limited-edition@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/limited-edition.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/limited-edition@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/limited-edition.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/limited-edition@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/limited-edition.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/limited-edition@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/limited-edition.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/limited-edition@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/limited-edition.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/limited-edition@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/limited-edition.jpg"
+                      alt="a book "
+                  /></picture>
+                  <p class="overlay">
+                    Отладка кода вдвое сложнее, чем его написание. Так что если
+                    вы пишете код настолько умно, насколько можете, то вы по
+                    определению недостаточно сообразительны, чтобы его
+                    отлаживать.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Издание Limited Edition</h3>
+                  <p class="description-paragraph">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/lab.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/lab@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/lab.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/lab@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/lab.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/lab@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/lab.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/lab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/lab.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/lab@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)
+                       "
+                      type="imae/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/lab.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/lab@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/lab.jpg"
+                      alt="labeltag"
+                  /></picture>
+                  <p class="overlay">
+                    Большинство хороших программистов делают свою работу не
+                    потому, что ожидают оплаты или признания, а потому что
+                    получают удовольствие от программирования.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Проект LAB</h3>
+                  <p class="description-paragraph">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list-item">
+              <a class="projects-list-link link" href="#">
+                <div class="img-container">
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/growing-business.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/growing-business@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/growing-business.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/growing-business@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/growing-business.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/growing-business@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/growing-business.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/growing-business@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/growing-business.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/growing-business@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/growing-business.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/growing-business@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/growing-business.jpg"
+                      alt="a person works on laptop "
+                  /></picture>
+                  <p class="overlay">
+                    Всегда пишите код так, будто сопровождать его будет склонный
+                    к насилию психопат, который знает, где вы живете.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h3 class="description-title">Growing Business</h3>
+                  <p class="description-paragraph">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-social-container">
+        <address class="main-contacts">
+          <a href="index.html" class="footer-logo link">
+            Web<span class="footer-logo-style">Studio</span></a
+          >
+          <ul>
+            <li class="footer-list-item">
+              <a
+                class="address-on-map link"
+                href="https://goo.gl/maps/1etui27LHii61bxHA"
+                target="_blank"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-contact-info link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-contact-info link" href="tel:+380991111111">
+                +38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-links-list">
+          <p class="join-us">присоединяйтесь</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-icon">
+                  <use href="./icons/sprite-svg.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-icon">
+                  <use href="./icons/sprite-svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-icon">
+                  <use href="./icons/sprite-svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-icon">
+                  <use href="./icons/sprite-svg.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-submit-wrapper">
+          <p class="footer-action-call">Подпишитесь на рассылку</p>
+          <form action="#" class="footer-submit-form">
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="footer-submit-input"
+              name="user-email"
+              required=""
+            /><button class="footer-submit-button" type="submit">
+              Подписаться
+              <svg width="24" height="24" class="submit-icon">
+                <use href="./icons/sprite-svg.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
