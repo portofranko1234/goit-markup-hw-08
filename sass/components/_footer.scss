@@ -206,11 +206,17 @@
     align-items: baseline;
     justify-content: center;
   }
+  .footer-social-list {
+    margin: 0px;
+  }
   .main-contacts {
     margin-right: 165px;
   }
   .footer-submit-wrapper {
     margin-top: 60px;
+  }
+  .join-us {
+    margin-top: 0px;
   }
 }
 
@@ -230,6 +236,9 @@
   .footer-submit-input {
     width: 358px;
     margin-right: 12px;
+  }
+  .footer-submit-wrapper {
+    margin-top: 0px;
   }
   .join-us {
     text-align: left;

@@ -5,14 +5,10 @@
 .opportunities-list {
   display: block;
 }
-.opportunities-list-item {
-  flex-basis: calc((100% - 15px * 8) / 4);
-  max-width: 450px;
-}
 
 .opportunities-list-item {
   margin-bottom: 30px;
-  margin-left: auto;
+
   &:last-child {
     margin-bottom: 0px;
   }
@@ -50,7 +46,6 @@
 }
 .opportunities-description {
   font-weight: 400;
-
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -63,6 +58,16 @@
     flex-wrap: wrap;
     align-items: baseline;
   }
+
+  .opportunities-list-item {
+    width: 354px;
+  }
+
+  .opportunities-list-item:nth-child(1),
+  .opportunities-list-item:nth-child(3) {
+    margin-right: 30px;
+  }
+
   .opportunities-title {
     text-align: left;
   }
@@ -76,7 +81,7 @@
 
   .opportunities-list-item {
     margin-right: 30px;
-    margin-left: auto;
+    width: 270px;
     &:last-child {
       margin-right: 0px;
     }

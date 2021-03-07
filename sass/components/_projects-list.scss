@@ -34,7 +34,7 @@
 
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
@@ -88,5 +88,30 @@
 @media screen and (min-width: 768px) {
   .projects-list {
     justify-content: space-between;
+  }
+  .projects-list-item {
+    width: 354px;
+  }
+  .img-description-tablet {
+    padding: 20px 24px 56px 24px;
+  }
+
+  .overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
+
+  .projects-list-item {
+    width: 370px;
+    height: 404px;
+  }
+
+  .img-description {
+    padding: 24px 20px;
   }
 }

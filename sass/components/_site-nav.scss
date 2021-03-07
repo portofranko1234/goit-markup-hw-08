@@ -30,6 +30,14 @@
 .footer-logo:hover {
   color: #188ce8;
 }
+.mobile-menu {
+  position: relative;
+}
+.mobile-menu-contacts-container {
+  position: absolute;
+  left: 40px;
+  bottom: 48px;
+}
 
 @media screen and (max-width: 767px) {
   .burger-button,
@@ -104,7 +112,7 @@
 
   .mobile-contacts-nav-item:first-child {
     font-weight: 500;
-    margin-top: 306px;
+
     font-size: 34px;
     line-height: 1.176;
     letter-spacing: 0.02em;
